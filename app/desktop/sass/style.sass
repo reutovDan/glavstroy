@@ -1,0 +1,865 @@
+@import "vars.sass"
+@import "fonts.sass"
+@import "myMix/mymix.sass"
+
+html,body
+  margin: 0
+  padding: 0
+  min-width: 1200px
+  font-family: 'pfdintextpro-regular',sans-serif
+
+*
+  box-sizing: border-box
+
+header,section
+  background-size: cover
+  background-position: center top
+img
+  max-width: 100%
+  width: 100%
+
+.cont
+  position: relative
+  width: 1170px
+  margin: 0 auto
+  padding: 45px 0
+  +clearfix
+
+.cols
+  +clearfix
+  .col-2
+    width: 50%
+    float: left
+  .col-3
+    width: 33.333333333333333333333333333333%
+    float: left
+
+.navigation
+  ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+    text-align: right
+    li
+      display: inline-block
+      a
+        text-decoration: underline
+        color: black
+        font-size: 18px
+        margin-left: 40px
+.btn-1
+  border: 3px solid #0f80d8
+  border-radius: 11px
+  height: 45px
+  display: inline-block
+  line-height: 38px
+  padding: 0 12px
+  text-decoration: none
+  font-size: 18px
+  color: black
+.btn-2
+  color: #fff
+  display: block
+  margin: 0 auto
+  width: 390px
+  height: 42px
+  background-color: #1581d5
+  border-radius: 10px
+  border: 0
+  cursor: pointer
+  font-size: 24px
+  text-align: center
+  transition: 0.25s
+  &:hover
+    background-color: lighten(#1581d5,10)
+
+
+
+.sect-1
+  background-image: url(../img/header.jpg)
+  height: 970px
+  .topline
+    margin-top: 25px
+  .logo
+    img
+      width: 208px !important
+  .phone
+    text-align: right
+    strong
+      margin-bottom: 15px
+      display: block
+      font-size: 24px
+  h1
+    margin-top: 70px
+    margin-bottom: 0
+    font-size: 42px
+    text-transform: uppercase
+    color: #fff
+    font-weight: 400
+    span
+      display: inline-block
+      background-color: rgba(0,0,0,0.8)
+      padding-left: 14px
+      margin-bottom: 14px
+      padding-right: 14px
+      padding-top: 14px
+      padding-bottom: 14px
+      &.desc
+        font-size: 38px
+        text-transform: none
+        background-color: rgba(0,0,0,0.8)
+  .form
+    float: right
+    width: 524px
+    height: 306px
+    position: relative
+    margin-top: 60px
+    background-color: white
+    h3
+      font-size: 24px
+      text-align: center
+      margin: 25px 0
+      line-height: 26px
+    input
+      display: block
+      width: 390px
+      border: 2px solid black
+      border-radius: 10px
+      height: 40px
+      line-height: 40px
+      color: black
+      text-align: center
+      font-size: 24px
+      outline: 0
+      margin: 0 auto
+      margin-bottom: 20px
+      @include placeholder
+        color: darken(#8F8F8F,20)
+        opacity: 1
+    .info
+      position: absolute
+      width: 650px
+      top: 0
+      left: -650px
+      margin: 0
+      margin-top: 16px
+      padding: 0
+      list-style-type: none
+      li
+        display: block
+        margin-bottom: 30px
+        background-color: rgba(0,0,0,0.6)
+        font-size: 32px
+        color: #fff
+        height: 70px
+        line-height: 70px
+        position: relative
+        padding-left: 115px
+      .icon
+        position: absolute
+        background-color: #fff
+        width: 86px
+        height: 70px
+        left: 0
+        top: 0
+        &-1
+          background-image: url(../img/icon01.png)
+          background-repeat: no-repeat
+          background-position: center
+        &-2
+          background-image: url(../img/icon02.png)
+          background-repeat: no-repeat
+          background-position: center
+        &-3
+          background-image: url(../img/icon03.png)
+          background-repeat: no-repeat
+          background-position: center
+.sect-2
+  background-color: #F4F4F4
+  h2
+    margin: 0
+    font-weight: 400
+    font-size: 32px
+    text-align: center
+    color: #2d2d2d
+    span
+      color: #0f80d8
+  h3
+    text-align: center
+    margin: 0
+    font-size: 28px
+    font-weight: 400
+    margin-top: 25px
+    margin-bottom: 25px
+    color: #2d2d2d
+  form
+    width: 250px
+    display: block
+    margin: 0 auto
+    input
+      display: block
+      width: 100%
+      border: 1.87px solid #898989
+      border-radius: 12px
+      height: 40px
+      line-height: 40px
+      color: black
+      text-align: center
+      font-family: 'Roboto', sans-serif
+      font-size: 18px
+      font-weight: 100
+      outline: 0
+      background-color: transparent
+      margin: 0 auto
+      margin-bottom: 27px
+      @include placeholder
+        color: #2d2d2d
+        opacity: 1
+    button
+      display: block
+      font-size: 18px
+      height: 46px
+      width: 100%
+      margin-top: 30px
+      border-radius: 11px
+      line-height: 46px
+.sect-3
+  h2
+    text-align: center
+    margin: 0
+    font-weight: 400
+    color: #2d2d2d
+    font-size: 32px
+  .cont
+    .house
+      margin-top: 50px
+      position: relative
+      background-image: url(../img/karkas.jpg)
+      width: 100%
+      background-repeat: no-repeat
+      height: 624px
+      background-size: 800px 624px
+      background-position: center
+      .item
+        position: absolute
+        font-family: 'pfdintextpro-regular',sans-serif
+        color: #2d2d2d
+        font-size: 23px
+        background-repeat: no-repeat
+        height: 45px
+        background-position: -30px bottom
+        p
+          margin: 0
+          position: absolute
+          font-size: 16px
+          padding: 10px 5px
+          width: 300px
+          font-family: 'pfdintextpro-regular',sans-serif
+          background-color: white
+          border: 3px solid #0f80d8
+          border-radius: 10px
+          opacity: 1
+          transition: 0.25s
+        &-1
+          background-image: url(../img/line-01.png)
+          background-size: 302px 22px
+          left: 60px
+          padding-left: 5px
+          width: 302px
+          top: 140px
+          p
+            top: 50px
+            left: 0
+        &-2
+          background-image: url(../img/line-02.png)
+          background-size: 208px 22px
+          width: 208px
+          left: 30px
+          padding-left: 5px
+          top: 420px
+          p
+            top: 50px
+            left: 0
+        &-3
+          background-image: url(../img/line-03.png)
+          background-size: 220px 22px
+          width: 220px
+          right: 125px
+          padding-left: 45px
+          top: 5px
+          background-position: 0 bottom
+          p
+            top: 50px
+            right: 0
+            height: 210px
+        &-4
+          background-image: url(../img/line-04.png)
+          background-size: 197px 22px
+          width: 197px
+          right: 75px
+          padding-left: 45px
+          top: 340px
+          background-position: 0 bottom
+          p
+            top: 50px
+            right: 0
+  .btn-2
+    margin-top: 50px
+    text-decoration: none
+    height: 46px
+    line-height: 46px
+    width: 350px
+    font-size: 18px
+    margin-bottom: 30px
+.sect-4
+  background-color: #F4F4F4
+  .cont
+    padding-bottom: 60px
+    .btn-2
+      text-decoration: none
+      font-size: 18px
+      line-height: 46px
+      height: 46px
+      margin-top: 35px
+      margin-bottom: 0
+  h2
+    text-align: center
+    margin: 0
+    color: black
+    font-size: 32px
+    font-weight: 400
+    margin-bottom: -10px
+  .project
+    border: 2px solid #A1A1A1
+    height: 250px
+    width: 900px
+    margin: 0 auto
+    overflow: hidden
+    margin-top: 32px
+    &-text
+      padding-left: 25px
+      padding-right: 25px
+      h3
+        color: #0f80d8
+        font-size: 28px
+        margin-top: 10px
+        margin-bottom: 10px
+        font-weight: 400
+      p
+        font-size: 18px
+        color: black
+        margin: 10px 0
+      ul
+        list-style-type: none
+        padding: 0
+        margin-top: 10px
+        margin-bottom: 10px
+        font-size: 18px
+        color: black
+      .btn-1
+        border: 2px solid #0f80d8
+        height: 46px
+        padding: 0 7px
+        line-height: 43px
+        font-size: 16px
+        margin-top: 5px
+    &-gellery
+      a
+        position: relative
+        span
+          position: absolute
+          z-index: 999
+          top: 0
+          font-size: 18px
+          color: #fff
+          background-color: #3382D8
+          height: 30px
+          width: 140px
+          padding-left: 50px
+          line-height: 30px
+          cursor: pointer
+          &.left
+            left: 0
+          &.right
+            right: 0
+          &::before
+            content: ''
+            position: absolute
+            background-image: url(../img/search.jpg)
+            top: 0
+            left: 0
+            width: 40px
+            height: 30px
+            background-size: cover
+      .slick
+        &-arrow
+          position: absolute
+          z-index: 1
+          width: 23px
+          height: 47px
+          opacity: 0.5
+          cursor: pointer
+          background-color: #1581d5
+          background-repeat: no-repeat
+          background-position: center
+          cursor: pointer
+          top: 100px
+        &-prev
+          background-image: url(../img/arrow-01.png)
+          left: 0
+        &-next
+          background-image: url(../img/arrow-01.png)
+          transform: rotate(180deg)
+          right: 0
+.sect-5
+  background-image: url(../img/bg-1.jpg)
+  .cont
+    padding: 30px 0
+    h2
+      color: white
+      font-size: 32px
+      font-weight: 400
+      text-align: center
+      margin: 0
+      margin-bottom: 35px
+    .calculator
+      width: 785px
+      margin: 35px auto 0
+      .cols
+        margin-bottom: 20px
+      .select
+        width: 300px
+        height: 40px
+        margin: 0 auto
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          @include triangle(15px 13px, #989898, down)
+          right: 10px
+          top: 50%
+          margin-top: -7px
+        select
+          width: 100%
+          height: 100%
+          background-color: white
+          border: 1px solid #2d2d2d
+          margin: 0 auto
+          outline: 0
+          @include appearance(none)
+          color: #2d2d2d
+          font-size: 16px
+          padding-left: 10px
+          font-weight: 100
+      .input-info
+        margin: 0
+        text-align: right
+        color: #fff
+        width: 300px
+        font-size: 18px
+        line-height: 40px
+      .col-2 input
+        display: block
+        width: 300px
+        height: 40px
+        background-color: white
+        border: 1px solid #2d2d2d
+        margin: 0 auto !important
+        outline: 0
+        color: #2d2d2d
+        font-size: 17px
+        padding-left: 10px
+        font-weight: 100
+      .btn-2
+        width: 100%
+        text-decoration: none
+        width: 300px
+        height: 46px
+        margin: 20px auto 0
+        background-color: #0f80d8
+        border-radius: 10px
+        font-size: 18px
+        line-height: 46px
+        &:hover
+          background-color: lighten(#1581d5,10)
+      .result
+        display: none
+        text-align: center
+        margin-top: 30px
+        font-size: 28px
+        color: #fff
+        p
+          margin: 10px 0
+        a
+          margin-bottom: 0
+      .col-3
+        margin-top: 30px
+        #result
+          width: 100%
+          height: 50px
+          display: block
+          border: 1px solid #0f80d8
+          line-height: 50px
+          color: #fff
+          text-align: center
+          font-size: 18px
+        .checkbox
+          line-height: 50px
+          font-size: 18px
+          color: #fff
+          cursor: pointer
+          span
+            display: inline-block
+          .box
+            display: inline-block
+            width: 18px
+            height: 18px
+            border: 2px solid #0F80D8
+            border-radius: 50%
+            position: relative
+            .active
+              position: absolute
+              width: 8px
+              height: 8px
+              background-color: #0F80D8
+              border-radius: 50%
+              left: 50%
+              top: 50%
+              margin-left: -4px
+              margin-top: -4px
+.sect-6
+  .cont
+    h2
+      margin: 0
+      color: #2d2d2d
+      text-align: center
+      font-size: 32px
+      font-weight: 400
+    .btn-2
+      text-decoration: none
+      width: 200px
+      height: 46px
+      background-color: #0f80d8
+      border-radius: 10px
+      line-height: 46px
+      font-size: 18px
+      margin: 0 auto
+.slider
+  width: 800px
+  margin: 25px auto 0
+  .item
+    padding: 0 20px
+    img
+      width: 70%
+      margin: 0 auto
+    h3
+      text-align: center
+      font-weight: 400
+      font-size: 24px
+    p
+      font-size: 18px
+      font-weight: 400
+      margin-top: 32px
+      margin: 15px 0
+      text-align: justify
+  .slick
+    &-arrow
+      position: absolute
+      top: 30%
+      cursor: pointer
+    &-prev
+      background-image: url(../img/arrow-02.png)
+      width: 20px
+      height: 47px
+      background-size: 20px 47px
+      left: -30px
+    &-next
+      background-image: url(../img/arrow-02.png)
+      transform: rotate(180deg)
+      width: 20px
+      height: 47px
+      background-size: 20px 47px
+      right: -30px
+    &-dots
+      list-style-type: none
+      text-align: center
+      margin: 20px 0
+      padding: 0
+      li
+        display: inline-block
+        width: 18px
+        height: 18px
+        background-color: #ddd
+        border-radius: 50%
+        margin: 0 15px
+        transition: 0.25s
+        cursor: pointer
+        &.slick-active
+          background-color: #0F80D8
+        button
+          display: none
+
+.sect-7
+  background-image: url(../img/bg-2.jpg)
+  .cont
+    padding: 35px 0 50px
+    .cols
+      width: 800px
+      margin: 0 auto
+      margin-top: 35px
+    .image
+      img
+        width: 100%
+        margin: 0 auto
+      &.left
+        padding-right: 40px
+        border-right: 3px solid #0f80d8
+      &.right
+        padding-left: 40px
+        border-left: 3px solid #0f80d8
+    .text
+      &.right
+        padding-left: 20px
+      &.left
+        padding-right: 20px
+      h3
+        color: #2d2d2d
+        margin: 0 0 20px
+        font-size: 28px
+        font-weight: 400
+      p
+        font-family: 'Roboto',sans-serif
+        font-size: 18px
+        font-weight: 100
+        margin: 20px 0 40px
+      a
+        color: #0f80d8
+        width: 180px
+        height: 46px
+        border: 1px solid #0f80d8
+        border-radius: 10px
+        font-size: 18px
+        text-decoration: none
+        text-align: center
+        font-weight: 400
+        line-height: 46px
+.sect-8
+  .cont
+    h2
+      color: #2d2d2d
+      text-align: center
+      font-size: 32px
+      font-weight: 400
+      margin: 0 0 35px
+    .item
+      margin: 0 10px
+      border: 1.87px solid #f4f4f4
+      box-shadow: 0 3px 7px rgba(206, 206, 206, 0.3)
+      img
+        width: 85%
+    .slick-dots
+      margin-top: 35px
+      margin-bottom: 0
+    .slick-track
+      padding-bottom: 10px
+.sect-9
+  background-color: #F5F5F5
+  .cont
+    h2
+      color: #2d2d2d
+      font-size: 32px
+      font-weight: 400
+      text-align: center
+      margin: 0
+    form
+      width: 800px
+      margin: 35px auto 0
+      input
+        display: block
+        width: 90%
+        margin: 0 auto
+        border: 1.87px solid #898989
+        border-radius: 12px
+        height: 40px
+        line-height: 40px
+        color: black
+        text-align: center
+        font-family: 'Roboto', sans-serif
+        font-size: 18px
+        font-weight: 100
+        outline: 0
+        background-color: transparent
+        @include placeholder
+          color: #2d2d2d
+          opacity: 1
+      button
+        display: block
+        font-size: 18px
+        height: 40px
+        width: 90%
+        margin: 0 autox
+        border: 1.87px solid #1581D5
+        border-radius: 11px
+        line-height: 40px
+.sect-10
+  .bottom-line
+    color: #2d2d2d
+    text-align: center
+    font-size: 18px
+    font-weight: 700
+    background-color: rgba(255,255,255,0.5)
+    height: 40px
+    line-height: 40px
+    margin-top: -40px
+    position: relative
+    z-index: 99
+    p
+      margin: 0
+
+.sect-11
+  background-color: #2d2d2d
+  .cont
+    height: 100px
+    padding: 0
+    .social-wrapper
+      padding-top: 40px
+      .conf
+        color: #fff
+        font-size: 18px
+        display: inline-block
+        width: auto
+        vertical-align: 5px
+        margin-left: 35px
+    span
+      display: inline-block
+      color: #fff
+      font-size: 18px
+      margin-right: 10px
+      vertical-align: top
+    .social
+      color: #fff
+      display: inline-block
+      font-size: 18px
+      height: 40px
+      margin-top: -4px
+      a
+        display: inline-block
+        width: 25px
+        height: 25px
+        margin: 0 5px
+    .telephone
+      float: right
+      margin-top: -10px
+      span
+        color: white
+        font-size: 18px
+        font-weight: 400
+        display: inline-block
+        margin-right: 15px
+        line-height: 40px
+      a
+        display: inline-block
+        color: #fff
+        line-height: 35px
+        height: 40px
+        font-size: 18px
+        margin-right: 35px
+
+
+
+
+//
+
+#dialog
+	background: white
+	text-align: left
+	max-width: 600px
+	margin: 40px auto
+	position: relative
+.form-pop
+  h3
+    text-align: center
+    font-weight: 400
+    font-size: 28px
+    padding-top: 25px
+    margin-top: 0
+    border-bottom: 2px solid #3382D8
+    padding-bottom: 15px
+  form
+    width: 100%
+    max-width: 280px
+    margin: 0 auto
+    padding-bottom: 40px
+    input
+      display: block
+      width: 100%
+      border: 1.87px solid #898989
+      border-radius: 12px
+      height: 40px
+      line-height: 40px
+      color: black
+      text-align: center
+      font-family: 'Roboto', sans-serif
+      font-size: 18px
+      font-weight: 100
+      outline: 0
+      background-color: transparent
+      margin: 0 auto
+      margin-bottom: 27px
+      @include placeholder
+        color: #2d2d2d
+        opacity: 1
+    button
+      display: block
+      font-size: 18px
+      height: 46px
+      width: 100%
+      margin-top: 30px
+      border-radius: 11px
+      line-height: 46px
+
+
+
+.my-mfp-zoom-in
+  .zoom-anim-dialog
+    opacity: 0
+    -webkit-transition: all 0.2s ease-in-out
+    -moz-transition: all 0.2s ease-in-out
+    -o-transition: all 0.2s ease-in-out
+    transition: all 0.2s ease-in-out
+    -webkit-transform: scale(0.8)
+    -moz-transform: scale(0.8)
+    -ms-transform: scale(0.8)
+    -o-transform: scale(0.8)
+    transform: scale(0.8)
+  &.mfp-ready .zoom-anim-dialog
+    opacity: 1
+    -webkit-transform: scale(1)
+    -moz-transform: scale(1)
+    -ms-transform: scale(1)
+    -o-transform: scale(1)
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog
+    -webkit-transform: scale(0.8)
+    -moz-transform: scale(0.8)
+    -ms-transform: scale(0.8)
+    -o-transform: scale(0.8)
+    transform: scale(0.8)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    -webkit-transition: opacity 0.3s ease-out
+    -moz-transition: opacity 0.3s ease-out
+    -o-transition: opacity 0.3s ease-out
+    transition: opacity 0.3s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: 0.8
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+
+
+
+
+// Media Queries
+@import "media.sass"
